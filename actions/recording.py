@@ -1,8 +1,9 @@
 #from Reaper.reaper_python import * # for autocomplete only
 from reaper_python import *
-from fifteencc.reaper import transport, tracks
-from fifteencc.reaper.tracks import ReaperTrack
-from fifteencc.reaper.modals import warn
+from ..tracks import ReaperTrack
+from ..modals import warn
+from .. import transport
+from .. import tracks
 
 
 def record_next_track():

@@ -1,8 +1,7 @@
 #from Reaper.reaper_python import * # for autocomplete only
 from reaper_python import *
-from fifteencc import reaper
-from fifteencc.reaper.modals import warn
-from fifteencc.reaper.tracks import ReaperTrack
+from ..modals import warn
+from ..tracks import ReaperTrack
 
 '''
 def export_selected_items_rendered_through_topmost_parent_folder(export_folder_path="./Renders"):
