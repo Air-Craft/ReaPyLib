@@ -1,7 +1,7 @@
 #from Reaper.reaper_python import * # for autocomplete only
 from reaper_python import *
-from fifteencc.reaper.items import ReaperItem
-from fifteencc.reaper.modals import warn, warn_ok_cancel
+from items import ReaperItem
+from modals import *
 
 def track_count(proj_idx = 0):
     return RPR_CountTracks(proj_idx)

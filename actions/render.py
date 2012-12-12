@@ -1,10 +1,9 @@
 #from Reaper.reaper_python import * # for autocomplete only
 import os
 from reaper_python import *
-from fifteencc import reaper
-from fifteencc.reaper.modals import *
-from fifteencc.reaper.tracks import ReaperTrack
-from fifteencc.reaper.items import ReaperItem
+from modals import *
+from ..tracks import ReaperTrack
+from ..items import ReaperItem
 
 def export_selected_tracks_through_master(export_folder_path='./Renders'):
     '''
@@ -17,7 +16,6 @@ def export_selected_tracks_through_master(export_folder_path='./Renders'):
     @param export_folder_path: Defaults to "./Renders". Appends to project (audio) path if relative 
     '''
     EXPORT_FILE_NAME_PLACEHOLDER = "REAPER_EXPORT_TMP"
-    
     
     sel_tracks = ReaperTrack.tracks_for_currently_selected()
     
